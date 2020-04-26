@@ -5,4 +5,4 @@ set -o errexit
 git add -A && \
 git commit -m "bump" && \
 git push origin master && \
-fluxctl sync --k8s-fwd-ns flux-system
+fluxctl sync --k8s-fwd-ns flux-system --timeout 2m
